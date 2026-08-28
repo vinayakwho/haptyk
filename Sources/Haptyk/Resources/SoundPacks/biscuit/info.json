@@ -1,0 +1,23 @@
+{
+  "id": "biscuit",
+  "name": "Biscuit",
+  "category": "Tactile",
+  "actuation_force": "60g bottom-out",
+  "travel": "3.5mm",
+  "description": "Custom warm acoustic profile with softened bottom-out pads. Rich, pillowy tactile sensation with rounded low-frequency warmth.",
+  "color": "#D97706",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

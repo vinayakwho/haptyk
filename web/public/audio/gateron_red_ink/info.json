@@ -1,0 +1,23 @@
+{
+  "id": "gateron_red_ink",
+  "name": "Gateron Red Ink V2",
+  "category": "Linear",
+  "actuation_force": "45g actuation / 60g bottom",
+  "travel": "4.0mm",
+  "description": "Velvety smooth lighter Ink linear switch with deep acoustic dampening and rich low-mid bottom-out resonance.",
+  "color": "#EF4444",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

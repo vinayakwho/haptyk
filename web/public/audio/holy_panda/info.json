@@ -1,0 +1,23 @@
+{
+  "id": "holy_panda",
+  "name": "Holy Panda",
+  "category": "Tactile",
+  "actuation_force": "67g bottom-out",
+  "travel": "3.8mm",
+  "description": "Halo stem inside Invyr Panda nylon housing. Dramatic, explosive tactile bump with a loud, snappy bottom-out clack.",
+  "color": "#F59E0B",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

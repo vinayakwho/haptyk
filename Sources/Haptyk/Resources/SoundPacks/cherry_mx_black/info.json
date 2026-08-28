@@ -1,0 +1,23 @@
+{
+  "id": "cherry_mx_black",
+  "name": "Cherry MX Black PBT",
+  "category": "Linear",
+  "actuation_force": "60g actuation / 80g bottom",
+  "travel": "4.0mm",
+  "description": "Heavy, solid vintage linear switch paired with thick PBT keycaps. Deep, muted low-frequency impact with substantial weight.",
+  "color": "#1F2937",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

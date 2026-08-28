@@ -1,0 +1,23 @@
+{
+  "id": "turquoise_tealios",
+  "name": "Turquoise Tealios",
+  "category": "Linear",
+  "actuation_force": "63.5g bottom-out",
+  "travel": "4.0mm",
+  "description": "ZealPC custom polymer linear switch. Silky smooth travel with a refined, clear high-frequency housing clack.",
+  "color": "#14B8A6",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

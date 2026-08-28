@@ -1,0 +1,23 @@
+{
+  "id": "gateron_black_ink",
+  "name": "Gateron Black Ink",
+  "category": "Linear",
+  "actuation_force": "60g actuation / 70g bottom",
+  "travel": "4.0mm",
+  "description": "Famous proprietary Ink housing material creating one of the deepest, cleanest bass 'thocks' in mechanical keyboard acoustics.",
+  "color": "#111827",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

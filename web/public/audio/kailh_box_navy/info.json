@@ -1,0 +1,23 @@
+{
+  "id": "kailh_box_navy",
+  "name": "Kailh Box Navy",
+  "category": "Thick Click",
+  "actuation_force": "60g actuation / 90g bottom",
+  "travel": "3.6mm",
+  "description": "Equipped with an extra-thick torsion clickbar mechanism. Produces a loud, authoritative double-click that echoes off the plate.",
+  "color": "#1E3A8A",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

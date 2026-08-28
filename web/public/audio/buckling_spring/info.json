@@ -1,0 +1,23 @@
+{
+  "id": "buckling_spring",
+  "name": "Buckling Spring",
+  "category": "IBM Model M",
+  "actuation_force": "65g-70g",
+  "travel": "3.7mm",
+  "description": "The quintessential vintage IBM Model M acoustic signature. Massive steel plate impact, buckling spring crunch, and long ringing metallic ping.",
+  "color": "#E5E7EB",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

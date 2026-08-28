@@ -1,0 +1,6 @@
+module CHaptykAudio {
+    header "CHaptykAudio.h"
+    header "HaptykAudioCore.h"
+    header "HaptykAudioBridge.h"
+    export *
+}

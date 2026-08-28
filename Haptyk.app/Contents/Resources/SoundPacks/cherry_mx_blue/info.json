@@ -1,0 +1,23 @@
+{
+  "id": "cherry_mx_blue",
+  "name": "Cherry MX Blue PBT",
+  "category": "Clicky",
+  "actuation_force": "50g actuation / 60g click",
+  "travel": "4.0mm",
+  "description": "Classic click-jacket mechanical switch. Sharp, snappy, high-pitched mechanical click followed by crisp bottom-out on PBT keycaps.",
+  "color": "#2563EB",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cherry_mx_red",
+  "name": "Cherry MX Red PBT",
+  "category": "Linear",
+  "actuation_force": "45g actuation",
+  "travel": "4.0mm",
+  "description": "Light, effortless linear switch. Clean, hollow-reduced bottom-out clack with swift return.",
+  "color": "#DC2626",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

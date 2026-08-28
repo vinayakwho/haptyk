@@ -1,0 +1,370 @@
+[
+  {
+    "id": "alpaca",
+    "name": "Alpaca",
+    "category": "Linear",
+    "actuation_force": "62g bottom-out",
+    "travel": "4.0mm",
+    "description": "Buttery smooth linear switch with JWK polycarbonate housing and nylon bottom. Soft, gentle bottom-out sound with smooth acoustic glide.",
+    "color": "#83A99F",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "blue_alps",
+    "name": "Blue Alps",
+    "category": "Clicky",
+    "actuation_force": "70g actuation",
+    "travel": "3.5mm",
+    "description": "Legendary vintage Alps SKCM Blue switch known for its crisp, resonant clickleaf mechanism and deep metallic acoustic resonance.",
+    "color": "#3B82F6",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "buckling_spring",
+    "name": "Buckling Spring",
+    "category": "IBM Model M",
+    "actuation_force": "65g-70g",
+    "travel": "3.7mm",
+    "description": "The quintessential vintage IBM Model M acoustic signature. Massive steel plate impact, buckling spring crunch, and long ringing metallic ping.",
+    "color": "#E5E7EB",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "cherry_mx_black",
+    "name": "Cherry MX Black PBT",
+    "category": "Linear",
+    "actuation_force": "60g actuation / 80g bottom",
+    "travel": "4.0mm",
+    "description": "Heavy, solid vintage linear switch paired with thick PBT keycaps. Deep, muted low-frequency impact with substantial weight.",
+    "color": "#1F2937",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "cherry_mx_blue",
+    "name": "Cherry MX Blue PBT",
+    "category": "Clicky",
+    "actuation_force": "50g actuation / 60g click",
+    "travel": "4.0mm",
+    "description": "Classic click-jacket mechanical switch. Sharp, snappy, high-pitched mechanical click followed by crisp bottom-out on PBT keycaps.",
+    "color": "#2563EB",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "cherry_mx_brown",
+    "name": "Cherry MX Brown PBT",
+    "category": "Tactile",
+    "actuation_force": "45g actuation / 55g peak",
+    "travel": "4.0mm",
+    "description": "Subtle tactile bump with moderate bottom-out clack. Well-rounded, versatile everyday mechanical keyboard sound.",
+    "color": "#92400E",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "cherry_mx_red",
+    "name": "Cherry MX Red PBT",
+    "category": "Linear",
+    "actuation_force": "45g actuation",
+    "travel": "4.0mm",
+    "description": "Light, effortless linear switch. Clean, hollow-reduced bottom-out clack with swift return.",
+    "color": "#DC2626",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "eg_crystal_purple",
+    "name": "EG Crystal Purple",
+    "category": "Tactile",
+    "actuation_force": "67g bottom-out",
+    "travel": "3.8mm",
+    "description": "Everglide crystal transparent polycarbonate housing providing a bright, snappy tactile pop with clean acoustic definition.",
+    "color": "#9333EA",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "gateron_black_ink",
+    "name": "Gateron Black Ink",
+    "category": "Linear",
+    "actuation_force": "60g actuation / 70g bottom",
+    "travel": "4.0mm",
+    "description": "Famous proprietary Ink housing material creating one of the deepest, cleanest bass 'thocks' in mechanical keyboard acoustics.",
+    "color": "#111827",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "gateron_red_ink",
+    "name": "Gateron Red Ink V2",
+    "category": "Linear",
+    "actuation_force": "45g actuation / 60g bottom",
+    "travel": "4.0mm",
+    "description": "Velvety smooth lighter Ink linear switch with deep acoustic dampening and rich low-mid bottom-out resonance.",
+    "color": "#EF4444",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "holy_panda",
+    "name": "Holy Panda",
+    "category": "Tactile",
+    "actuation_force": "67g bottom-out",
+    "travel": "3.8mm",
+    "description": "Halo stem inside Invyr Panda nylon housing. Dramatic, explosive tactile bump with a loud, snappy bottom-out clack.",
+    "color": "#F59E0B",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "kailh_box_navy",
+    "name": "Kailh Box Navy",
+    "category": "Thick Click",
+    "actuation_force": "60g actuation / 90g bottom",
+    "travel": "3.6mm",
+    "description": "Equipped with an extra-thick torsion clickbar mechanism. Produces a loud, authoritative double-click that echoes off the plate.",
+    "color": "#1E3A8A",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "nk_cream",
+    "name": "NK Cream",
+    "category": "Linear",
+    "actuation_force": "55g actuation / 70g bottom",
+    "travel": "4.0mm",
+    "description": "Made entirely from self-lubricating POM thermoplastic. Produces a distinctive high-mid clack with unique acoustic density.",
+    "color": "#FDE68A",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "topre",
+    "name": "Topre PBT",
+    "category": "Electrostatic",
+    "actuation_force": "45g / 55g uniform",
+    "travel": "4.0mm",
+    "description": "Electrostatic capacitive rubber dome and conical spring mechanism. Iconic deep, muted, buttery 'thock' with no harsh metallic edges.",
+    "color": "#6B7280",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "turquoise_tealios",
+    "name": "Turquoise Tealios",
+    "category": "Linear",
+    "actuation_force": "63.5g bottom-out",
+    "travel": "4.0mm",
+    "description": "ZealPC custom polymer linear switch. Silky smooth travel with a refined, clear high-frequency housing clack.",
+    "color": "#14B8A6",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  },
+  {
+    "id": "biscuit",
+    "name": "Biscuit",
+    "category": "Tactile",
+    "actuation_force": "60g bottom-out",
+    "travel": "3.5mm",
+    "description": "Custom warm acoustic profile with softened bottom-out pads. Rich, pillowy tactile sensation with rounded low-frequency warmth.",
+    "color": "#D97706",
+    "has_release": true,
+    "tiers": [
+      "soft",
+      "medium",
+      "hard",
+      "slam"
+    ],
+    "key_groups": [
+      "standard",
+      "spacebar",
+      "enter",
+      "backspace",
+      "modifier"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "blue_alps",
+  "name": "Blue Alps",
+  "category": "Clicky",
+  "actuation_force": "70g actuation",
+  "travel": "3.5mm",
+  "description": "Legendary vintage Alps SKCM Blue switch known for its crisp, resonant clickleaf mechanism and deep metallic acoustic resonance.",
+  "color": "#3B82F6",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

@@ -1,0 +1,10 @@
+.build/
+*.o
+*.a
+.DS_Store
+.vscode/
+.idea/
+DerivedData/
+node_modules/
+.vercel/
+*.log
