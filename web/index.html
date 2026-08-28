@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haptyk — Velocity-Sensitive Mechanical Keyboard for MacBook</title>
+  <meta name="description" content="Haptyk detects how hard you type on your MacBook using the built-in accelerometer and plays matching mechanical keyboard sounds in real time (<1ms latency).">
+  <link rel="icon" type="image/png" href="icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass { background: rgba(23, 25, 35, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card { background: rgba(30, 34, 48, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.06); }
+    .glow-cyan { box-shadow: 0 0 30px rgba(6, 182, 212, 0.25); }
+    .glow-orange { box-shadow: 0 0 30px rgba(249, 115, 22, 0.25); }
+  </style>
+</head>
+<body class="bg-[#0b0d13] text-gray-100 min-h-screen selection:bg-cyan-500 selection:text-black">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 glass border-b border-white/5 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="icon.png" alt="Haptyk Logo" class="w-9 h-9 rounded-xl shadow-lg">
+        <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">Haptyk</span>
+        <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-semibold">macOS Native</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#switches" class="text-sm font-medium text-gray-400 hover:text-white transition">16 Switches</a>
+        <a href="#try" class="text-sm font-medium text-gray-400 hover:text-white transition">Live Demo</a>
+        <a href="https://github.com" target="_blank" class="text-sm font-medium px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition flex items-center gap-2">
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass mb-6 text-xs font-semibold text-cyan-400">
+      <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+      Internal MacBook Accelerometer (~1,000 reads / sec)
+    </div>
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+      The velocity-sensitive mechanical keyboard your <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-orange-400 bg-clip-text text-transparent">MacBook was missing</span>.
+    </h1>
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Haptyk reads your actual typing force for an authentic, immersive mechanical keyboard experience. Type softly, hear a soft click. Slam a key, hear the slam.
+    </p>
+
+    <!-- Stat Highlights -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
+      <div class="glass-card p-4 rounded-2xl">
+        <div class="text-2xl font-bold text-cyan-400">&lt; 1 ms</div>
+        <div class="text-xs text-gray-400 mt-1">Audio Latency (Native C)</div>
+      </div>
+      <div class="glass-card p-4 rounded-2xl">
+        <div class="text-2xl font-bold text-orange-400">1,000 Hz</div>
+        <div class="text-xs text-gray-400 mt-1">Chassis Accelerometer</div>
+      </div>
+      <div class="glass-card p-4 rounded-2xl">
+        <div class="text-2xl font-bold text-emerald-400">16 Switches</div>
+        <div class="text-xs text-gray-400 mt-1">Real Acoustic Recordings</div>
+      </div>
+      <div class="glass-card p-4 rounded-2xl">
+        <div class="text-2xl font-bold text-purple-400">4 Tiers</div>
+        <div class="text-xs text-gray-400 mt-1">Soft · Med · Hard · Slam</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Live Typing Playground in Browser -->
+  <section id="try" class="max-w-4xl mx-auto px-6 mb-24">
+    <div class="glass p-8 rounded-3xl glow-cyan border border-cyan-500/20">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+        <div>
+          <h2 class="text-2xl font-bold">Interactive Web Sound Playground</h2>
+          <p class="text-sm text-gray-400">Type inside the box or click preview buttons below to hear the switches live.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <label class="text-xs font-semibold text-gray-400">ACTIVE SWITCH:</label>
+          <select id="webSwitchSelect" class="bg-gray-800 text-white text-sm font-semibold rounded-lg px-3 py-1.5 border border-white/10 outline-none focus:border-cyan-500">
+            <option value="holy_panda">Holy Panda (Tactile)</option>
+            <option value="buckling_spring">Buckling Spring (IBM Model M)</option>
+            <option value="blue_alps">Blue Alps (Clicky)</option>
+            <option value="alpaca">Alpaca (Linear)</option>
+            <option value="cherry_mx_blue">Cherry MX Blue (Clicky)</option>
+            <option value="cherry_mx_brown">Cherry MX Brown (Tactile)</option>
+            <option value="cherry_mx_black">Cherry MX Black (Linear)</option>
+            <option value="cherry_mx_red">Cherry MX Red (Linear)</option>
+            <option value="gateron_black_ink">Gateron Black Ink (Thock)</option>
+            <option value="gateron_red_ink">Gateron Red Ink (Linear)</option>
+            <option value="kailh_box_navy">Kailh Box Navy (Thick Click)</option>
+            <option value="nk_cream">NK Cream (POM Linear)</option>
+            <option value="topre">Topre PBT (Electrostatic)</option>
+            <option value="turquoise_tealios">Turquoise Tealios (Linear)</option>
+            <option value="eg_crystal_purple">EG Crystal Purple (Tactile)</option>
+            <option value="biscuit">Biscuit (Warm Tactile)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Live Typing Area -->
+      <textarea id="liveTypingInput" rows="4" placeholder="Start typing here to test mechanical keyboard sounds live..." class="w-full bg-black/40 border border-white/10 rounded-xl p-4 text-gray-100 placeholder-gray-500 mono focus:border-cyan-400 focus:outline-none transition resize-none"></textarea>
+
+      <!-- Live Velocity Meter & Audio Waveform -->
+      <div class="mt-6 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-gray-400">SIMULATED VELOCITY:</span>
+          <div class="flex gap-1.5">
+            <button onclick="playTier('soft')" class="text-xs font-semibold px-2.5 py-1 rounded bg-blue-500/20 text-blue-400 hover:bg-blue-500/30">Soft</button>
+            <button onclick="playTier('medium')" class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30">Medium</button>
+            <button onclick="playTier('hard')" class="text-xs font-semibold px-2.5 py-1 rounded bg-orange-500/20 text-orange-400 hover:bg-orange-500/30">Hard</button>
+            <button onclick="playTier('slam')" class="text-xs font-semibold px-2.5 py-1 rounded bg-red-500/20 text-red-400 hover:bg-red-500/30">Slam</button>
+            <button onclick="playKeyGroup('spacebar')" class="text-xs font-semibold px-2.5 py-1 rounded bg-purple-500/20 text-purple-400 hover:bg-purple-500/30">Spacebar</button>
+          </div>
+        </div>
+        <div class="text-xs text-gray-500 mono" id="statusTicker">Ready to type</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 Switches Grid -->
+  <section id="switches" class="max-w-6xl mx-auto px-6 mb-24">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold mb-3">16 Curated Switch Sound Packs</h2>
+      <p class="text-gray-400">Every pack includes soft, medium, hard, and slam tiers per key group.</p>
+    </div>
+
+    <div id="switchCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-12 px-6 text-center text-sm text-gray-500">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <img src="icon.png" class="w-6 h-6 rounded-lg">
+        <span class="font-bold text-gray-300">Haptyk</span>
+        <span>© 2026. High-Performance Native macOS Audio.</span>
+      </div>
+      <div>Built with C, CoreAudio, and Swift for Apple Silicon.</div>
+    </div>
+  </footer>
+
+  <script>
+    const audioCache = {};
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    async function loadAudio(url) {
+      if (audioCache[url]) return audioCache[url];
+      try {
+        const res = await fetch(url);
+        const buffer = await res.arrayBuffer();
+        const decoded = await audioCtx.decodeAudioData(buffer);
+        audioCache[url] = decoded;
+        return decoded;
+      } catch (e) {
+        console.warn("Audio load error:", e);
+        return null;
+      }
+    }
+
+    async function playSound(packId, group, tier) {
+      if (audioCtx.state === 'suspended') {
+        await audioCtx.resume();
+      }
+      const url = `audio/${packId}/${group}_${tier}.wav`;
+      const buffer = await loadAudio(url);
+      if (!buffer) return;
+
+      const source = audioCtx.createBufferSource();
+      source.buffer = buffer;
+      // Micro-pitch variation (±1%)
+      source.playbackRate.value = 0.99 + Math.random() * 0.02;
+
+      const gainNode = audioCtx.createGain();
+      gainNode.gain.value = 1.0;
+
+      source.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      source.start(0);
+
+      document.getElementById('statusTicker').innerText = `Played: ${packId} / ${group} (${tier})`;
+    }
+
+    function getSelectedPack() {
+      return document.getElementById('webSwitchSelect').value;
+    }
+
+    function playTier(tier) {
+      playSound(getSelectedPack(), 'standard', tier);
+    }
+
+    function playKeyGroup(group) {
+      playSound(getSelectedPack(), group, 'hard');
+    }
+
+    // Typing Event Listener
+    let lastKeyTime = Date.now();
+    document.getElementById('liveTypingInput').addEventListener('keydown', (e) => {
+      const now = Date.now();
+      const dt = now - lastKeyTime;
+      lastKeyTime = now;
+
+      let group = 'standard';
+      if (e.code === 'Space') group = 'spacebar';
+      else if (e.code === 'Enter') group = 'enter';
+      else if (e.code === 'Backspace') group = 'backspace';
+      else if (e.key === 'Shift' || e.key === 'Control' || e.key === 'Alt' || e.key === 'Meta') group = 'modifier';
+
+      // Velocity based on typing interval
+      let tier = 'medium';
+      if (dt < 70) tier = 'slam';
+      else if (dt < 130) tier = 'hard';
+      else if (dt > 300) tier = 'soft';
+
+      playSound(getSelectedPack(), group, tier);
+    });
+
+    // Populate switch cards
+    const switches = [
+      { id: 'holy_panda', name: 'Holy Panda', category: 'Tactile', force: '67g bottom', desc: 'Explosive tactile bump with sharp nylon bottom-out clack.', color: '#F59E0B' },
+      { id: 'buckling_spring', name: 'Buckling Spring', category: 'IBM Model M', force: '65g-70g', desc: 'Massive steel plate impact, buckling crunch, and ringing ping.', color: '#E5E7EB' },
+      { id: 'blue_alps', name: 'Blue Alps', category: 'Clicky', force: '70g actuation', desc: 'Legendary vintage Alps SKCM crisp clickleaf resonance.', color: '#3B82F6' },
+      { id: 'topre', name: 'Topre PBT', category: 'Electrostatic', force: '45g uniform', desc: 'Iconic deep, muted, buttery rubber dome capacitive thock.', color: '#6B7280' },
+      { id: 'gateron_black_ink', name: 'Gateron Black Ink', category: 'Linear', force: '60g actuation', desc: 'Famous deep bass thock linear switch.', color: '#111827' },
+      { id: 'alpaca', name: 'Alpaca', category: 'Linear', force: '62g bottom', desc: 'Buttery smooth linear with soft acoustic bottom-out glide.', color: '#83A99F' },
+      { id: 'kailh_box_navy', name: 'Kailh Box Navy', category: 'Thick Click', force: '60g actuation', desc: 'Extra-thick torsion clickbar with authoritative clack.', color: '#1E3A8A' },
+      { id: 'nk_cream', name: 'NK Cream', category: 'Linear', force: '55g actuation', desc: 'Self-lubricating POM thermoplastic distinct clack.', color: '#FDE68A' },
+      { id: 'cherry_mx_blue', name: 'Cherry MX Blue', category: 'Clicky', force: '50g actuation', desc: 'Classic high-pitched click-jacket snap.', color: '#2563EB' },
+      { id: 'cherry_mx_brown', name: 'Cherry MX Brown', category: 'Tactile', force: '45g actuation', desc: 'Subtle tactile bump with well-rounded acoustic clack.', color: '#92400E' },
+      { id: 'cherry_mx_black', name: 'Cherry MX Black', category: 'Linear', force: '60g actuation', desc: 'Heavy solid vintage linear with thick PBT keycaps.', color: '#1F2937' },
+      { id: 'cherry_mx_red', name: 'Cherry MX Red', category: 'Linear', force: '45g actuation', desc: 'Light, effortless linear with clean bottom-out clack.', color: '#DC2626' },
+      { id: 'gateron_red_ink', name: 'Gateron Red Ink V2', category: 'Linear', force: '45g actuation', desc: 'Velvety smooth lighter Ink linear with deep resonance.', color: '#EF4444' },
+      { id: 'turquoise_tealios', name: 'Turquoise Tealios', category: 'Linear', force: '63.5g bottom', desc: 'Silky smooth ZealPC linear with refined housing clack.', color: '#14B8A6' },
+      { id: 'eg_crystal_purple', name: 'EG Crystal Purple', category: 'Tactile', force: '67g bottom', desc: 'Crystal transparent housing with bright snappy pop.', color: '#9333EA' },
+      { id: 'biscuit', name: 'Biscuit', category: 'Tactile', force: '60g bottom', desc: 'Warm acoustic profile with rounded low-frequency warmth.', color: '#D97706' }
+    ];
+
+    const grid = document.getElementById('switchCardsGrid');
+    switches.forEach(sw => {
+      const card = document.createElement('div');
+      card.className = 'glass-card p-5 rounded-2xl flex flex-col justify-between hover:border-white/20 transition';
+      card.innerHTML = `
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded-full" style="background-color: ${sw.color}"></span>
+              <h3 class="font-bold text-lg text-white">${sw.name}</h3>
+            </div>
+            <span class="text-xs px-2 py-0.5 rounded font-semibold bg-white/10 text-gray-300">${sw.category}</span>
+          </div>
+          <div class="text-xs text-gray-400 mb-3">${sw.force}</div>
+          <p class="text-xs text-gray-400 mb-4">${sw.desc}</p>
+        </div>
+        <div class="flex items-center justify-between pt-3 border-t border-white/5">
+          <span class="text-[10px] font-bold text-gray-500">PREVIEW:</span>
+          <div class="flex gap-1.5">
+            <button onclick="playSound('${sw.id}', 'standard', 'soft')" class="text-[11px] px-2 py-1 rounded bg-blue-500/15 text-blue-400 hover:bg-blue-500/25">Soft</button>
+            <button onclick="playSound('${sw.id}', 'standard', 'medium')" class="text-[11px] px-2 py-1 rounded bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25">Med</button>
+            <button onclick="playSound('${sw.id}', 'standard', 'hard')" class="text-[11px] px-2 py-1 rounded bg-orange-500/15 text-orange-400 hover:bg-orange-500/25">Hard</button>
+            <button onclick="playSound('${sw.id}', 'spacebar', 'slam')" class="text-[11px] px-2 py-1 rounded bg-purple-500/15 text-purple-400 hover:bg-purple-500/25">Space</button>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

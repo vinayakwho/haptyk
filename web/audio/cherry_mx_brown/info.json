@@ -1,0 +1,23 @@
+{
+  "id": "cherry_mx_brown",
+  "name": "Cherry MX Brown PBT",
+  "category": "Tactile",
+  "actuation_force": "45g actuation / 55g peak",
+  "travel": "4.0mm",
+  "description": "Subtle tactile bump with moderate bottom-out clack. Well-rounded, versatile everyday mechanical keyboard sound.",
+  "color": "#92400E",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

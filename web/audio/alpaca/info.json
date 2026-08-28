@@ -1,0 +1,23 @@
+{
+  "id": "alpaca",
+  "name": "Alpaca",
+  "category": "Linear",
+  "actuation_force": "62g bottom-out",
+  "travel": "4.0mm",
+  "description": "Buttery smooth linear switch with JWK polycarbonate housing and nylon bottom. Soft, gentle bottom-out sound with smooth acoustic glide.",
+  "color": "#83A99F",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

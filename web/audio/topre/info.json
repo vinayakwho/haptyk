@@ -1,0 +1,23 @@
+{
+  "id": "topre",
+  "name": "Topre PBT",
+  "category": "Electrostatic",
+  "actuation_force": "45g / 55g uniform",
+  "travel": "4.0mm",
+  "description": "Electrostatic capacitive rubber dome and conical spring mechanism. Iconic deep, muted, buttery 'thock' with no harsh metallic edges.",
+  "color": "#6B7280",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

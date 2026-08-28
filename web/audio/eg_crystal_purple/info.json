@@ -1,0 +1,23 @@
+{
+  "id": "eg_crystal_purple",
+  "name": "EG Crystal Purple",
+  "category": "Tactile",
+  "actuation_force": "67g bottom-out",
+  "travel": "3.8mm",
+  "description": "Everglide crystal transparent polycarbonate housing providing a bright, snappy tactile pop with clean acoustic definition.",
+  "color": "#9333EA",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}

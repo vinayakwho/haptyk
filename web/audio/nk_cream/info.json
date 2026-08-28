@@ -1,0 +1,23 @@
+{
+  "id": "nk_cream",
+  "name": "NK Cream",
+  "category": "Linear",
+  "actuation_force": "55g actuation / 70g bottom",
+  "travel": "4.0mm",
+  "description": "Made entirely from self-lubricating POM thermoplastic. Produces a distinctive high-mid clack with unique acoustic density.",
+  "color": "#FDE68A",
+  "has_release": true,
+  "tiers": [
+    "soft",
+    "medium",
+    "hard",
+    "slam"
+  ],
+  "key_groups": [
+    "standard",
+    "spacebar",
+    "enter",
+    "backspace",
+    "modifier"
+  ]
+}
