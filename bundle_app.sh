@@ -74,10 +74,4 @@ cat << 'PLIST' > "${CONTENTS_DIR}/Info.plist"
 PLIST
 
 codesign -s - --force --deep "${BUNDLE_DIR}"
-
-# Install to /Applications
-echo "Installing to /Applications/Haptyk.app..."
-rm -rf "/Applications/${APP_NAME}.app" 2>/dev/null || true
-cp -R "${BUNDLE_DIR}" "/Applications/" 2>/dev/null || cp -R "${BUNDLE_DIR}" "$HOME/Applications/"
-
-echo "✓ Successfully built and installed ${APP_NAME}.app with AppIcon!"
+echo "✓ Successfully built ${APP_NAME}.app with custom AppIcon!"
